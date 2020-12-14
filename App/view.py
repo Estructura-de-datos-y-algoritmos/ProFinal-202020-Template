@@ -167,14 +167,16 @@ while True:
     
     elif int(inputs[0]) == 6:
         
-        stacion_ini = "28"
-
+        #stacion_ini = "28"
+        print("Digite la estacion inicial\n")
+        stacion_ini = input()
 
         # Rutas de costo minimo de estacion inicial a demas estaciones
 
         paths = controller.minimumCostPaths(cont, stacion_ini) 
-
-        stacion_fin = "56"
+        print("Digite la estacion final\n")
+        stacion_fin = input()
+        #stacion_fin = "56"
         #Ruta de costo minimo entre estacion inicial y estacion final
         path = controller.minimumCostPath(paths, stacion_fin)
 
